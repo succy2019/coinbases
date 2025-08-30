@@ -358,8 +358,8 @@
             }
 
             nav {
-                position: absolute;
-                top: 100%;
+                position: fixed;
+                top: 60px;
                 left: 0;
                 right: 0;
                 background-color: #0052ff;
@@ -367,6 +367,7 @@
                 overflow: hidden;
                 transition: max-height 0.3s ease;
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                z-index: 1000;
             }
 
             nav.active {
@@ -403,6 +404,19 @@
             }
         }
     </style>
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '9fcbb66a13f0297b6294e901a96918150957d813';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
 </head>
 <body>
     <!-- Header -->
@@ -431,7 +445,7 @@
         </div>
     </section>
 
-    <!-- Search Section -->
+    <!-- Search Section
     <section class="search-section">
         <div class="container">
             <div class="search-container">
@@ -441,7 +455,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Categories Section -->
     <section class="categories" id="categories">
